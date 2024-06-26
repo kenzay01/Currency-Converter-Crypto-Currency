@@ -24,13 +24,13 @@ export default function App() {
       </button>
       {activeMenu && <SideBar className="sidebar" />}
       <div className="content">
-        <Router to="/">
+        <Router to="/Currency-Converter-Crypto-Currency/">
           <MainPage />
         </Router>
-        <Router to="/globalCurrency">
+        <Router to="/Currency-Converter-Crypto-Currency/globalCurrency">
           <GlobalCurrencyPage />
         </Router>
-        <Router to="/cryptoCurrency">
+        <Router to="/Currency-Converter-Crypto-Currency/cryptoCurrency">
           <CryptoCurrencyPage />
         </Router>
       </div>

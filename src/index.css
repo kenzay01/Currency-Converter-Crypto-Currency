@@ -497,3 +497,137 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 0;
   z-index: 1000;
 }
+
+@media (max-width: 782px) {
+  .main-page h1 {
+    font-size: 1.25rem;
+  }
+  .sidebar {
+    left: 1%;
+    top: 5%;
+    width: 50%;
+    height: 400px;
+    text-align: center;
+  }
+  .menu {
+    left: 4%;
+    top: 7%;
+  }
+  .menu.closed {
+    left: 1%;
+    top: 5.3%;
+  }
+  .global-page {
+    padding: 20px;
+  }
+  .global-container {
+    width: 100%;
+    padding: 20px 20px 30px;
+  }
+  .global-container h2 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  .form-currency-group {
+    flex-direction: column;
+  }
+  .swap-icon-con {
+    margin: 13px 0px;
+  }
+  .form-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    flex-direction: row;
+  }
+  .form-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .exchange-rate-result {
+    margin-top: 10px;
+  }
+  .crypto-container {
+    width: 100%;
+    padding: 25px 10px;
+  }
+  .crypto-search {
+    width: 100%;
+    padding: 10px;
+  }
+  .crypto-search h1 {
+    font-size: 1.65rem;
+  }
+  .crypto-search input {
+    width: 100%;
+    font-size: 0.85rem;
+    min-height: 32px;
+  }
+  .crypto-container-row {
+    padding: 0;
+    padding-top: 10px;
+  }
+  .crypto-container-row h1 {
+    font-size: 0.55rem;
+  }
+  .crypto-logo-sym img {
+    width: 20px;
+    height: 20px;
+  }
+  .crypto-logo-sym h1 {
+    margin-top: 3px;
+    /* font-size: 0.65rem; */
+  }
+  .crypto-name {
+    width: 50%;
+  }
+  .crypto-price {
+    margin: 0;
+    margin-left: 10px;
+  }
+  .crypto-high-low h1 {
+    margin: 0;
+
+    font-size: 0.45rem;
+  }
+  .crypto-price-row {
+    width: 40%;
+  }
+  .crypto-module-container {
+    height: 95%;
+  }
+  .crypto-module {
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+  }
+  .crypto-module-logo-name img {
+    width: 125px;
+    height: 125px;
+  }
+  .crypto-module-logo-name h1 {
+    font-size: 1.5rem;
+  }
+  .crypto-module-info p {
+    font-size: 1rem;
+  }
+  .crypto-module-calculate {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .crypto-module-calculate input {
+    font-size: 1.1rem;
+    width: 150px;
+  }
+  .crypto-module-calculate label {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .crypto-module-result h1 {
+    font-size: 2.25rem;
+  }
+}
