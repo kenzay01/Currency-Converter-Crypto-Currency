@@ -1,5 +1,5 @@
 import { FaArrowUpLong, FaArrowDownLong } from "react-icons/fa6";
-
+import { useEffect, useState } from "react";
 function CryptoCurrencyRow({
   id,
   image,
@@ -11,6 +11,20 @@ function CryptoCurrencyRow({
   low_24h,
   onClick,
 }) {
+  const [isMobile, setIsMobile] = useState(false);
+  const handleResize = () => {
+    if (window.innerWidth <= 782) {
+      setIsMobile(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [window.innerWidth <= 782]);
+
   return (
     <div key={id} className="crypto-container-row" onClick={onClick}>
       <div className="crypto-row">
@@ -34,13 +48,15 @@ function CryptoCurrencyRow({
               {price_change_percentage_24h.toFixed(2)}%
             </h1>
           </div>
-          <div className="crypto-high-low">
-            <h1>
-              [<FaArrowUpLong />
-              {high_24h} | <FaArrowDownLong />
-              {low_24h}]
-            </h1>
-          </div>
+          {isMobile && (
+            <div className="crypto-high-low">
+              <h1>
+                [<FaArrowUpLong />
+                {high_24h} | <FaArrowDownLong />
+                {low_24h}]
+              </h1>
+            </div>
+          )}
         </div>
       </div>
     </div>
