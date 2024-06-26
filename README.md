@@ -1,2 +1,2 @@
-# Currency & Crypto Curency Converter
+# Currency & Crypto Currency Converter
 
