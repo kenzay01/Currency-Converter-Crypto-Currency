@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import SideBar from "./components/SideBar";
+import Router from "./components/Router";
+import GlobalCurrencyPage from "./pages/GlobalCurrencyPage";
+import CryptoCurrencyPage from "./pages/CryptoCurrencyPage";
+import MainPage from "./pages/MainPage";
+import { useState } from "react";
+import { RiMenuUnfold4Line2, RiMenuUnfold3Line2 } from "react-icons/ri";
+export default function App() {
+  const [activeMenu, setActiveMenu] = useState(true);
+  const handleClick = () => {
+    setActiveMenu(!activeMenu);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      <button
+        onClick={handleClick}
+        className={`menu ${activeMenu ? "" : "closed"}`}
+      >
+        {activeMenu ? (
+          <RiMenuUnfold3Line2 className="menu-icon" />
+        ) : (
+          <RiMenuUnfold4Line2 className="menu-icon closed" />
+        )}
+      </button>
+      {activeMenu && <SideBar className="sidebar" />}
+      <div className="content">
+        <Router to="/">
+          <MainPage />
+        </Router>
+        <Router to="/globalCurrency">
+          <GlobalCurrencyPage />
+        </Router>
+        <Router to="/cryptoCurrency">
+          <CryptoCurrencyPage />
+        </Router>
+      </div>
     </div>
   );
 }
-
-export default App;
