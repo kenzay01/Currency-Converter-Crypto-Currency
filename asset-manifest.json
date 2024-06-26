@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Currency-Converter-Crypto-Currency/static/css/main.769da770.css",
-    "main.js": "/Currency-Converter-Crypto-Currency/static/js/main.5031db43.js",
+    "main.js": "/Currency-Converter-Crypto-Currency/static/js/main.88416c50.js",
     "static/media/bg-gl-cur.png": "/Currency-Converter-Crypto-Currency/static/media/bg-gl-cur.22224319b17a62dc5316.png",
     "static/media/bg-main.png": "/Currency-Converter-Crypto-Currency/static/media/bg-main.d3362f32e86a471c6d87.png",
     "index.html": "/Currency-Converter-Crypto-Currency/index.html",
     "main.769da770.css.map": "/Currency-Converter-Crypto-Currency/static/css/main.769da770.css.map",
-    "main.5031db43.js.map": "/Currency-Converter-Crypto-Currency/static/js/main.5031db43.js.map"
+    "main.88416c50.js.map": "/Currency-Converter-Crypto-Currency/static/js/main.88416c50.js.map"
   },
   "entrypoints": [
     "static/css/main.769da770.css",
-    "static/js/main.5031db43.js"
+    "static/js/main.88416c50.js"
   ]
 }
