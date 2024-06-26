@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import CryptoCurrencyRow from "../components/CryptoCurrencyRow";
 import CryptoModule from "../components/CryptoModule";
 import Skeleton from "../components/Skeleton";
-import Router from "../components/Router";
 
 function CryptoCurrencyPage() {
   const [inputValue, setInputValue] = useState("");
