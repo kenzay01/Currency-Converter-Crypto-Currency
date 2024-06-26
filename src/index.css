@@ -498,7 +498,7 @@ input[type="number"]::-webkit-inner-spin-button {
   z-index: 1000;
 }
 
-@media (max-width: 782px) {
+@media (max-width: 682px) {
   .main-page h1 {
     font-size: 1.25rem;
   }
@@ -550,6 +550,9 @@ input[type="number"]::-webkit-inner-spin-button {
   .exchange-rate-result {
     margin-top: 10px;
   }
+  .crypto-page {
+    padding: 20px;
+  }
   .crypto-container {
     width: 100%;
     padding: 25px 10px;
@@ -573,31 +576,37 @@ input[type="number"]::-webkit-inner-spin-button {
   .crypto-container-row h1 {
     font-size: 0.55rem;
   }
+  .crypto-logo-sym {
+    /* display: flex; */
+    flex-direction: column;
+    gap: 0;
+  }
   .crypto-logo-sym img {
     width: 20px;
     height: 20px;
   }
   .crypto-logo-sym h1 {
+    margin: 0;
     margin-top: 3px;
     /* font-size: 0.65rem; */
   }
   .crypto-name {
-    width: 50%;
+    width: 30%;
   }
   .crypto-price {
     margin: 0;
-    margin-left: 10px;
+    margin-left: 5px;
   }
   .crypto-high-low h1 {
     margin: 0;
 
     font-size: 0.45rem;
   }
-  .crypto-price-row {
-    width: 40%;
-  }
+  /* .crypto-price-row {
+    width: 70%;
+  } */
   .crypto-module-container {
-    height: 95%;
+    height: 100%;
   }
   .crypto-module {
     width: 300px;
